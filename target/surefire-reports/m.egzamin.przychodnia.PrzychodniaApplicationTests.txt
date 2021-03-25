@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: m.egzamin.przychodnia.PrzychodniaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.146 s <<< FAILURE! - in m.egzamin.przychodnia.PrzychodniaApplicationTests
+contextLoads(m.egzamin.przychodnia.PrzychodniaApplicationTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'raportRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'raportRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class m.egzamin.przychodnia.model.Raport
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'raportRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class m.egzamin.przychodnia.model.Raport
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class m.egzamin.przychodnia.model.Raport
+
